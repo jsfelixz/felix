@@ -1,17 +1,262 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Playlist JS Félix</title>
+  <title>🎃 Filmes de Terror</title>
+  <style>
+    :root {
+      --bg-color: #111;
+      --text-color: #eee;
+      --accent-color: #ff4444;
+      --card-color: #222;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      margin: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    h1 {
+      color: var(--accent-color);
+      text-shadow: 2px 2px #000;
+      margin-top: 60px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: var(--card-color);
+      margin: 20px 0;
+      padding: 10px;
+      border-left: 5px solid var(--accent-color);
+      box-shadow: 0 0 5px #000;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    iframe {
+      width: 300px;
+      height: 200px;
+      border: none;
+      flex-shrink: 0;
+    }
+
+    .info {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .info h3 {
+      margin: 0 0 10px;
+      color: #ff9999;
+    }
+
+    .info p {
+      margin: 5px 0;
+    }
+
+    .btn-drive {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: var(--accent-color);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    #som-btn, #tema-btn {
+      position: fixed;
+      top: 10px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 0 5px #000;
+      z-index: 1000;
+      border: none;
+      color: #fff;
+    }
+
+    #som-btn {
+      right: 10px;
+      background-color: var(--accent-color);
+    }
+
+    #tema-btn {
+      left: 10px;
+      background-color: #444;
+    }
+
+    #som-btn:hover {
+      background-color: #ff6666;
+    }
+
+    #tema-btn:hover {
+      background-color: #666;
+    }
+
+    @media (max-width: 600px) {
+      li {
+        flex-direction: column;
+      }
+
+      iframe {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h2>🎵 Playlist JS Félix</h2>
-  <ul>
-    <li><a href="https://drive.google.com/file/d/1WrpsK21NhaYvJ42PdxyPlxxO7hxyjRii/view?usp=sharing" target="_blank">Espelhos do medo I</a></li>
-    <li><a href="https://drive.google.com/file/d/1EnOvElsGD01-R3t7uvQ4gzkX35HREwLn/view?usp=sharing" target="_blank">Espelhos do medo II</a></li>
-    <li><a href="https://drive.google.com/file/d/119F3lRwhmTuD58fQ6FCLLYn97_Fsyzdo/view?usp=sharing" target="_blank">MONTAGEM XONADA</a></li>
-    <li><a href="https://drive.google.com/file/d/1F7WOKEissRXrczRVmVNRpTOLfrV8IIDc/view?usp=sharing" target="_blank">Cido dos Teclados - Te Cutuco no Cutuco</a></li>
-  </ul>
-</body>
+  <button id="tema-btn">🌗 Alternar Tema</button>
+  <button id="som-btn">🔊 Ativar Som</button>
 
+  <h1>🎃 Filmes de Terror</h1>
+  <ul>
+    <li>
+      <iframe src="https://www.youtube.com/embed/ktbIyLgObnY" allowfullscreen></iframe>
+      <div class="info">
+        <h3>🔮 Espelhos do Medo I (2008)</h3>
+        <p><strong>Sinopse:</strong> Ex-detetive começa a ver imagens horripilantes nos espelhos de uma loja abandonada.</p>
+        <p><strong>Duração:</strong> 111 min</p>
+        <p><strong>Nota:</strong> IMDb 6.1</p>
+        <a class="btn-drive" href="https://drive.google.com/file/d/1WrpsK21NhaYvJ42PdxyPlxxO7hxyjRii/view?usp=sharing" target="_blank">📁 Assistir</a>
+      </div>
+    </li>
+    <li>
+      <iframe src="https://www.youtube.com/embed/sSS8unxMsow" allowfullscreen></iframe>
+      <div class="info">
+        <h3>🔮 Espelhos do Medo II (2010)</h3>
+        <p><strong>Sinopse:</strong> Max vê visões em espelhos após a morte da noiva e descobre mortes misteriosas.</p>
+        <p><strong>Duração:</strong> 86 min</p>
+        <p><strong>Nota:</strong> IMDb 4.8</p>
+        <a class="btn-drive" href="#" target="_blank">📁 Assistir</a>
+      </div>
+    </li>
+    <li>
+      <iframe src="https://www.youtube.com/embed/sqQNAe8U5VU" allowfullscreen></iframe>
+      <div class="info">
+        <h3>🕳️ Abismo do Medo I (2005)</h3>
+        <p><strong>Sinopse:</strong> Grupo de amigas preso em caverna enfrenta criaturas aterrorizantes.</p>
+        <p><strong>Duração:</strong> 99 min</p>
+        <p><strong>Nota:</strong> IMDb 7.2</p>
+        <a class="btn-drive" href="#" target="_blank">📁 Assistir</a>
+      </div>
+    </li>
+    <li>
+      <iframe src="https://www.youtube.com/embed/wRTb7J_0k_I" allowfullscreen></iframe>
+      <div class="info">
+        <h3>🕳️ Abismo do Medo II (2009)</h3>
+        <p><strong>Sinopse:</strong> Sarah retorna à caverna para ajudar nas buscas e enfrenta o mal novamente.</p>
+        <p><strong>Duração:</strong> 94 min</p>
+        <p><strong>Nota:</strong> IMDb 5.7</p>
+        <a class="btn-drive" href="#" target="_blank">📁 Assistir</a>
+      </div>
+    </li>
+    <li>
+      <iframe src="https://www.youtube.com/embed/F6l4tTCfRlY" allowfullscreen></iframe>
+      <div class="info">
+        <h3>📸 Lentes do Mal (2009)</h3>
+        <p><strong>Sinopse:</strong> Estudantes exploram medos profundos e enfrentam consequências violentas.</p>
+        <p><strong>Duração:</strong> 108 min</p>
+        <p><strong>Nota:</strong> IMDb 5.6</p>
+        <a class="btn-drive" href="#" target="_blank">📁 Assistir</a>
+      </div>
+    </li>
+    <li>
+      <iframe src="https://www.youtube.com/embed/8h7hJDst5TQ" allowfullscreen></iframe>
+      <div class="info">
+        <h3>🎯 Você é o Próximo (2011)</h3>
+        <p><strong>Sinopse:</strong> Reunião familiar vira massacre; Erin revela habilidades de sobrevivência.</p>
+        <p><strong>Duração:</strong> 94 min</p>
+        <p><strong>Nota:</strong> IMDb 6.6</p>
+        <a class="btn-drive" href="#" target="_blank">📁 Assistir</a>
+      </div>
+    </li>
+    <li>
+      <iframe src="https://www.youtube.com/embed/4V44ew-laC4" allowfullscreen></iframe>
+      <div class="info">
+        <h3>⛪ A Freira (2018)</h3>
+        <p><strong>Sinopse:</strong> Investigação em convento revela entidade demoníaca Valak.</p>
+        <p><strong>Duração:</strong> 97 min</p>
+        <p><strong>Nota:</strong> IMDb 5.3</p>
+        <a class="btn-drive" href="#" target="_blank">📁 Assistir</a>
+      </div>
+    </li>
+    <li>
+      <iframe src="https://www.youtube.com/embed/0JZ8WGVSrwM" allowfullscreen></iframe>
+      <div class="info">
+        <h3>⛪ A Freira II (2023)</h3>
+        <p><strong>Sinopse:</strong> Irmã Irene retorna para enfrentar Valak, agora mais forte e mais perigoso.</p>
+        <p><strong>Duração:</strong> 109 min</p>
+        <p><strong>Nota:</strong> IMDb 5.6</p>
+        <a class="btn-drive" href="#" target="_blank">📁 Assistir</a>
+      </div>
+    </li>
+	<li>
+  <iframe src="https://www.youtube.com/embed/g87tPfyPgWI?si=ssk-n1i7KJoSk216" allowfullscreen></iframe>
+  <div class="info">
+    <h3>👰 A Noiva (2017)</h3>
+    <p><strong>Sinopse:</strong> Nastya é levada à casa da família do noivo e envolvida em uma cerimônia eslava com consequências sobrenaturais.</p>
+    <p><strong>Duração:</strong> 93 min</p>
+    <p><strong>Nota:</strong> IMDb 4.7</p>
+    <a class="btn-drive" href="#" target="_blank">📁 Assistir</a>
+  </div>
+	</li>
+	<li>
+  <iframe src="https://www.youtube.com/embed/4J_MHoYqN9E?si=iOSW5XPdI7uwvAt1" allowfullscreen></iframe>
+  <div class="info">
+    <h3>🔥 Arraste-me para o Inferno (2009)</h3>
+    <p><strong>Sinopse:</strong> Christine Brown, analista de crédito, recusa o pedido de uma senhora para estender seu empréstimo. Como vingança, ela é amaldiçoada por um espírito maligno que passa a atormentá-la.</p>
+    <p><strong>Duração:</strong> 99 min</p>
+    <p><strong>Nota:</strong> IMDb 6.6</p>
+    <a class="btn-drive" href="#" target="_blank">📁 Assistir</a>
+  </div>
+	</li>
+  </ul>
+
+  <audio id="terror-audio" loop preload="auto">
+    <source src="https://cdn.pixabay.com/audio/2022/03/09/audio_8f6aacf9e8.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML.
+  </audio>
+
+  <script>
+    const audio = document.getElementById('terror-audio');
+    const botaoSom = document.getElementById('som-btn');
+    const botaoTema = document.getElementById('tema-btn');
+
+    botaoSom.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play().catch((e) => {
+          console.warn("Autoplay bloqueado:", e);
+        });
+      } else {
+        audio.pause();
+      }
+    });
+
+    botaoTema.addEventListener('click', () => {
+      const root = document.documentElement;
+      if (root.style.getPropertyValue('--bg-color') === '#fff') {
+        root.style.setProperty('--bg-color', '#111');
+        root.style.setProperty('--text-color', '#eee');
+        root.style.setProperty('--accent-color', '#ff4444');
+        root.style.setProperty('--card-color', '#222');
+      } else {
+        root.style.setProperty('--bg-color', '#fff');
+        root.style.setProperty('--text-color', '#111');
+        root.style.setProperty('--accent-color', '#0066cc');
+        root.style.setProperty('--card-color', '#f0f0f0');
+      }
+    });
+  </script>
+</body>
 </html>
