@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>🎃 Filmes de Terror</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     :root {
       --bg-color: #111;
@@ -115,7 +118,32 @@
         height: 200px;
       }
     }
-  </style>
+ /* Botão Voltar ao Topo */
+#btnTopo {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+  background: rgba(255, 0, 0, 0.85);
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+#btnTopo:hover {
+  background: #ff1a1a;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 26, 26, 0.6);
+}
+
+</style>
 </head>
 <body>
   <button id="tema-btn">🌗 Alternar Tema</button>
@@ -259,10 +287,33 @@
         root.style.setProperty('--card-color', '#f0f0f0');
       }
     });
+	  document.addEventListener("DOMContentLoaded", function() {
+    const btnTopo = document.getElementById("btnTopo");
+
+    // Mostrar ou esconder botão conforme rolagem
+    window.addEventListener("scroll", function() {
+      if (window.scrollY > 150) {
+        btnTopo.style.display = "block";
+      } else {
+        btnTopo.style.display = "none";
+      }
+    });
+
+    // Rolagem suave até o topo
+    btnTopo.addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
   </script>
-	<div><p style="text-align:center">Todos os direitos reservados &copyJS Félix 2025</p></div>
+<!-- Botão Voltar ao Topo -->
+<button id="btnTopo" title="Voltar ao topo" style="display:none;">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<div><p style="text-align:center">Todos os direitos reservados &copyJS Félix 2025</p></div>
 </body>
 </html>
+
 
 
 
