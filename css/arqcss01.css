@@ -57,10 +57,13 @@
 
     .info p {
       margin: 5px 0;
-	  color: #ff6633;
     }
 	.maior {
 		color: #990000;
+	}
+
+	p {
+		color: #ff6633;
 	}
 
     .btn-drive {
