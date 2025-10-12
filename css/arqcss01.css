@@ -64,21 +64,19 @@
 
 	p {
 		color: #ff6633;
-		position: fixed;
-		right: 0;
-  		top: 50%; /* Opcional: para centralizar verticalmente na tela */
-  		transform: translateY(-50%); /* Opcional: para ajustar o alinhamento vertical */
-  		background-color: lightblue; /* Opcional: para destacar o elemento */
-  		padding: 10px; /* Opcional: para adicionar um espaçamento interno */
 	}
 
     #link-assistir {
-      margin-top: 10px;
-      padding: 8px 12px;
-      background-color: var(--accent-color);
+      /*background-color: var(--accent-color);*/
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
+	  position: fixed;
+	  right: 0;
+  	  top: 50%; /* Opcional: para centralizar verticalmente na tela */
+  	  transform: translateY(-50%); /* Opcional: para ajustar o alinhamento vertical */
+  	  background-color: lightblue; /* Opcional: para destacar o elemento */
+  	  padding: 10px; /* Opcional: para adicionar um espaçamento interno */
     }
 
     #tema-btn {
