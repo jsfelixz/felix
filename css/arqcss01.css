@@ -40,7 +40,7 @@
 
     iframe {
       width: 300px;
-      height: 200px;
+      height: 220px;
       border: none;
       flex-shrink: 0;
     }
@@ -57,6 +57,7 @@
 
     .info p {
       margin: 5px 0;
+	  color: #cc9900;
     }
 	.maior {
 		color: #990000;
