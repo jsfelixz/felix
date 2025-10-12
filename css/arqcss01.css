@@ -66,13 +66,16 @@
 		color: #ff6633;
 	}
 
-    .btn-drive {
+    #link-assistir {
+	  position: fixed;
       margin-top: 40px;
-      padding: 8px 12px;
+      padding: 10px 15px;
       background-color: var(--accent-color);
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
+	  z-index: 1000;
+	  box-shadow: 0 0 5px #000;
     }
 
     #som-btn, #tema-btn {
