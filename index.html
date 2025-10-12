@@ -53,19 +53,7 @@
   </ul>
 
   <script>
-    const audio = document.getElementById('terror-audio');
-    const botaoSom = document.getElementById('som-btn');
     const botaoTema = document.getElementById('tema-btn');
-
-    botaoSom.addEventListener('click', () => {
-      if (audio.paused) {
-        audio.play().catch((e) => {
-          console.warn("Autoplay bloqueado:", e);
-        });
-      } else {
-        audio.pause();
-      }
-    });
 
     botaoTema.addEventListener('click', () => {
       const root = document.documentElement;
@@ -112,6 +100,7 @@
 <div><p style="text-align:center">&copy JS Félix 2025</p></div>
 </body>
 </html>
+
 
 
 
