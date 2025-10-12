@@ -67,7 +67,7 @@
 	}
 
     #link-assistir {
-	  display: flex;
+	  display: inline;
       margin-top: 10px;
       padding: 8px 12px;
       background-color: var(--accent-color);
