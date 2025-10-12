@@ -76,7 +76,7 @@
 	  font-weight: bold;
   	  top: 20%; /* Opcional: para centralizar verticalmente na tela */
   	  transform: translateY(-50%); /* Opcional: para ajustar o alinhamento vertical */
-  	  background-color: #660000; /* Opcional: para destacar o elemento */
+  	  background-color: #003333; /* Opcional: para destacar o elemento */
   	  padding: 10px; /* Opcional: para adicionar um espaçamento interno */
     }
 
