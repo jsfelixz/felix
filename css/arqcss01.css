@@ -65,6 +65,11 @@
 	p {
 		color: #ff6633;
 		position: fixed;
+		right: 0;
+  		top: 50%; /* Opcional: para centralizar verticalmente na tela */
+  		transform: translateY(-50%); /* Opcional: para ajustar o alinhamento vertical */
+  		background-color: lightblue; /* Opcional: para destacar o elemento */
+  		padding: 10px; /* Opcional: para adicionar um espaçamento interno */
 	}
 
     #link-assistir {
