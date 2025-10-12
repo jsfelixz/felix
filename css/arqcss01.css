@@ -5,7 +5,7 @@
       --card-color: #222;
     }
 
-    body {
+    body { 
       background-color: var(--bg-color);
       color: var(--text-color);
       font-family: 'Segoe UI', sans-serif;
