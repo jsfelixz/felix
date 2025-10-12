@@ -13,6 +13,12 @@
       margin: 0;
       transition: background-color 0.3s, color 0.3s;
     }
+	.filmes-link {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+	  color: #0077cc;
+}
 
     h1 {
       color: var(--accent-color);
