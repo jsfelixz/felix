@@ -58,6 +58,9 @@
     .info p {
       margin: 5px 0;
     }
+	.maior {
+		color: #660000;
+	}
 
     .btn-drive {
       display: inline-block;
