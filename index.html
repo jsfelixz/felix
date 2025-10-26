@@ -5,7 +5,187 @@
   <title>JS Félix</title>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
-	<link rel="stylesheet" href="css/arqcss01.css">
+	
+	<style type="text/css">
+	:root {  
+      --bg-color: #111;
+      --text-color: #eee;
+      --accent-color: #ff4444;
+      --card-color: #222;
+    }
+
+    body {  
+      background-color: var(--bg-color); 
+      color: var(--text-color);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      margin: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    h1 {
+      color: var(--accent-color);
+      text-shadow: 2px 2px #000;
+      margin-top: 60px;
+	  text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+	  width: 70%;
+      background-color: var(--card-color);
+      margin: 20px 15%;
+      padding: 10px;
+      border-left: 5px solid var(--accent-color);
+      box-shadow: 0 0 5px #000;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    iframe {
+      width: 300px;
+      height: 220px;
+      border: none;
+      flex-shrink: 0;
+    }
+
+    .info {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .info h3 {
+      margin: 0 0 10px;
+      color: #ff9999;
+    }
+
+    .info p {
+      margin: 5px 0;
+    }
+	.maior { 
+		color: #990000;
+	}
+
+	p {
+		color: #ff6633;
+	}
+	p a:link {
+		color: #00cc66;
+		fontweight: bold;
+	}
+	p a:visited {
+		color: #ffffff;
+	}
+
+    #link-assistir {
+      /*background-color: var(--accent-color);*/
+      color: #ff6633;
+      text-decoration: none;
+      border-radius: 5px;
+	  position: fixed;
+	  right: 20px;
+	  font-weight: bold; 
+  	  top: 5%; /* Opcional: para centralizar verticalmente na tela */
+  	  transform: translateY(-50%); /* Opcional: para ajustar o alinhamento vertical */
+  	  background-color: #003333; /* Opcional: para destacar o elemento */
+  	  padding: 10px; /* Opcional: para adicionar um espaçamento interno */
+    }
+
+    #tema-btn {
+      position: fixed;
+      top: 10px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 0 5px #000;
+      z-index: 1000;
+      border: none;
+      color: #fff;
+    }
+
+    #tema-btn {
+      left: 10px;
+      background-color: #444;
+    }
+
+    #tema-btn:hover {
+      background-color: #666;
+    }
+
+    @media (max-width: 600px) {
+      li {
+        flex-direction: column;
+      }
+
+      iframe {
+        width: 100%;
+        height: 200px;
+      }
+    }
+	
+    /* Botão Voltar ao Topo */
+  #btnTopo {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999999; /* Garantido sobre qualquer coisa */
+  background: rgba(255, 0, 0, 0.85);
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  pointer-events: none;
+  }
+
+  /* Visível */
+  #btnTopo.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  }
+
+  /* Oculto */
+  #btnTopo.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  pointer-events: none;
+  }
+
+  /* Animação contínua no ícone */
+  #btnTopo i {
+  animation: bounce 2s infinite ease-in-out;
+  }
+
+  @keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  }
+
+  /* Hover */
+  #btnTopo:hover {
+  background: #ff1a1a;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 26, 26, 0.6);
+  }
+
+  #btnTopo:hover i {
+  animation: none;
+  transform: translateY(-3px);
+  }
+</style>
 	
 </head>
 <body>
@@ -107,6 +287,7 @@
 <div><p style="text-align:center">&copy JS Félix 2025</p></div>
 </body>
 </html>
+
 
 
 
